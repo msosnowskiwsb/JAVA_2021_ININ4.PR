@@ -16,5 +16,9 @@ public class Main {
 
         System.out.println(animal1);
         System.out.println(animal1.name);
+
+       Animal animalWithMaxWeiht = animal1.weight > animal2.weight ? animal1 : animal2;
+       System.out.println("The heaviest animal: " + animalWithMaxWeiht.species + " " + animalWithMaxWeiht.name + ". His weihgt: " + animalWithMaxWeiht.weight + " kg.");
     }
+
 }
