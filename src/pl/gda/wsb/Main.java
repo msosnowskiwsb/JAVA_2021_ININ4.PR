@@ -48,6 +48,19 @@ public class Main {
         }
         fw.close();
 
+        System.out.println("\n----------------\n");
+
+
+        animal2.feed();
+        animal2.takeForAWalk();
+
+        animal1.feed();
+        animal1.feed();
+        animal1.takeForAWalk();
+        animal1.takeForAWalk();
+        animal1.takeForAWalk();
+        animal1.feed();
+
     }
 
 }
