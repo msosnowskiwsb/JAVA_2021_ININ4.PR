@@ -9,8 +9,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
 
-        Animal animal1 = new Animal("mouse", "Jerry", 0.8);
-        Animal animal2 = new Animal("lion", "Mufasa", 123.5);
+        Animal animal1 = new Animal("mouse", "Jerry");
+        Animal animal2 = new Animal("lion", "Mufasa");
 
         Human human1 = new Human("Jan", "Nowak", "UX Designer");
         Human human2 = new Human("Janusz", "Kowalski", "Manual Tester");
@@ -18,6 +18,8 @@ public class Main {
 
         Phone phone1 = new Phone("Samsung", "S10", 8.5);
         Phone phone2 = new Phone("Nokia", "5.1", 7.0);
+
+        Car car1 = new Car("KIA", "CARRENS", 2017, 1.8, "black");
 
         System.out.println(animal1);
         System.out.println(animal1.name);
@@ -61,6 +63,12 @@ public class Main {
         animal1.takeForAWalk();
         animal1.feed();
 
+        System.out.println("\n----------------\n");
+
+        human1.car = car1;
+        human1.pet = animal1;
+
+        System.out.println(human1.firstName + " have a car: " + human1.car.producer + " " + human1.car.model + " and have a pet " + human1.pet.name + " (" + human1.pet.species + ")");
     }
 
 }
