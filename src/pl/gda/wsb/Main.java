@@ -23,7 +23,7 @@ public class Main {
         Phone phone1 = new Phone("Samsung", "S10", 8.5);
         Phone phone2 = new Phone("Nokia", "5.1", 7.0);
 
-        Car car1 = new Car(Producer.KIA, "CARRENS", 2017, 1.8, "black");
+        Car car1 = new Car(Producer.KIA, "CARRENS", 2017, 1.8, "black", 25600.0);
 
         System.out.println(animal1);
         System.out.println(animal1.name);
@@ -44,6 +44,7 @@ public class Main {
         humansList.add(human1);
         humansList.add(human2);
         humansList.add(human3);
+        humansList.add(human4);
 
         System.out.println("Lista humans:");
 
@@ -69,10 +70,12 @@ public class Main {
 
         System.out.println("\n----------------\n");
 
-        human1.car = car1;
+        human1.setSalary(12500.0);
+        human1.setCar(car1);
         human1.pet = animal1;
 
-        System.out.println(human1.firstName + " have a car: " + human1.car.producer + " " + human1.car.model + " and have a pet " + human1.pet.name + " (" + human1.pet.species + ")");
+        if (human1.getCar() != null)
+        System.out.println(human1.firstName + " have a car: " + human1.getCar().getProducer() + " " + human1.getCar().getModel() + " and have a pet " + human1.pet.name + " (" + human1.pet.species + ")");
 
         System.out.println("\n----------------\n");
 
@@ -86,11 +89,12 @@ public class Main {
 
         System.out.println("\n----------------\n");
 
-        human1.setSalary(12500.0);
         System.out.println("Wypłata: " +human1.getSalary() + "\n");
 
         human1.setSalary(-900.0);
         human1.setSalary(13000.0);
+
+        //TODO: dokończyć zadanie 10, na tym skończyliśmy zajęcia
     }
 
 }
