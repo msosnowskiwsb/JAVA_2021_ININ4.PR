@@ -1,4 +1,4 @@
-package pl.gda.wsb;
+package pl.gda.wsb.devices;
 
 public class Phone {
     String producer;

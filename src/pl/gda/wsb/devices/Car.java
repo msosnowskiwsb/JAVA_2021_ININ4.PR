@@ -1,11 +1,13 @@
-package pl.gda.wsb;
+package pl.gda.wsb.devices;
+
+import pl.gda.wsb.Producer;
 
 public class Car {
-    final Producer producer;
-    final String model;
-    final Integer yearOfProduction;
-    Double engine;
-    String color;
+    public final Producer producer;
+    public final Integer yearOfProduction;
+    public final String model;
+    public Double engine;
+    public String color;
 
     public Car(Producer producer, String model, Integer yearOfProduction, Double engine, String color) {
         this.producer = producer;
