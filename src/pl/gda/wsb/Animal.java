@@ -9,7 +9,7 @@ public class Animal {
     public static final Double DEFAULT_LION_WEIGHT = 120.0;
     public static final Double DEFAULT_WEIGHT = 2.0;
 
-    public Animal(String species, String name, double weight) {
+    public Animal(String species, String name) {
         this.species = species;
         this.name = name;
         if (species.equals("mouse")) {
