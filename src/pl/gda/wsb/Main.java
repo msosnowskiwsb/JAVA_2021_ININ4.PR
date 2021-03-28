@@ -83,6 +83,14 @@ public class Main {
         System.out.println(human1);
         System.out.println(phone1);
         System.out.println(animal1);
+
+        System.out.println("\n----------------\n");
+
+        human1.setSalary(12500.0);
+        System.out.println("Wypłata: " +human1.getSalary() + "\n");
+
+        human1.setSalary(-900.0);
+        human1.setSalary(13000.0);
     }
 
 }
