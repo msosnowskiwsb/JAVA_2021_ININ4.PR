@@ -10,4 +10,13 @@ public class Phone {
         this.model = model;
         this.screenSize = screenSize;
     }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", screenSize=" + screenSize +
+                '}';
+    }
 }

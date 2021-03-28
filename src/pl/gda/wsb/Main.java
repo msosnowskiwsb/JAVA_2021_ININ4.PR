@@ -15,11 +15,12 @@ public class Main {
         Human human1 = new Human("Jan", "Nowak", "UX Designer");
         Human human2 = new Human("Janusz", "Kowalski", "Manual Tester");
         Human human3 = new Human("Keith", "Yellowstone", "Project Manager");
+        Human human4 = new Human("Keith", "Yellowstone", "Project Manager");
 
         Phone phone1 = new Phone("Samsung", "S10", 8.5);
         Phone phone2 = new Phone("Nokia", "5.1", 7.0);
 
-        Car car1 = new Car("KIA", "CARRENS", 2017, 1.8, "black");
+        Car car1 = new Car(Producer.KIA, "CARRENS", 2017, 1.8, "black");
 
         System.out.println(animal1);
         System.out.println(animal1.name);
@@ -45,7 +46,7 @@ public class Main {
 
         FileWriter fw = new FileWriter("human.txt", false);
         for (Human human : humansList) {
-            System.out.println(human.firstName + " " + human.lastName + " , " + human.position);
+            System.out.println(human);
             fw.write(human.firstName + " " + human.lastName + " , " + human.position + "\n");
         }
         fw.close();
@@ -69,6 +70,16 @@ public class Main {
         human1.pet = animal1;
 
         System.out.println(human1.firstName + " have a car: " + human1.car.producer + " " + human1.car.model + " and have a pet " + human1.pet.name + " (" + human1.pet.species + ")");
+
+        System.out.println("\n----------------\n");
+
+        if (human3.equals(human4)) System.out.println("Wynik porównania: TRUE");
+        else System.out.println("Wynik porównania: FALSE\n");
+
+        System.out.println(car1);
+        System.out.println(human1);
+        System.out.println(phone1);
+        System.out.println(animal1);
     }
 
 }
