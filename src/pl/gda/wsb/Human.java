@@ -41,13 +41,14 @@ public class Human {
     }
 
     public void setCar(Car car) {
-        if (this.salary > car.getValue()){
-            System.out.println("Gratki, kupiłeś auto :) " + car.toString());
-            this.car = car;
-        } else if (this.salary > 0.83*car.getValue()){
-            System.out.println("Noooo a jednak, wziąłeś na kredyt...");
-            this.car = car;
-        } else System.out.println("No way! Skombinuj hajs!");
+//        if (this.salary > car.getValue()){
+////            System.out.println("Gratki, kupiłeś auto :) " + car.toString());
+////            this.car = car;
+////        } else if (this.salary > 0.83*car.getValue()){
+////            System.out.println("Noooo a jednak, wziąłeś na kredyt...");
+////            this.car = car;
+////        } else System.out.println("No way! Skombinuj hajs!");
+        this.car = car;
     }
 
     public Double getCash() {
@@ -56,6 +57,21 @@ public class Human {
 
     public void setCash(Double cash) {
         this.cash = cash;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public boolean hasCar (Car newCar){
+        if (this.car == newCar){
+            return true;
+        }
+        return false;
+    }
+
+    public void removeCar(){
+        this.car = null;
     }
 
     @Override

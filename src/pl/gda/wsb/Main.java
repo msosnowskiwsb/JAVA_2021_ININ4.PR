@@ -101,7 +101,11 @@ public class Main {
 
         System.out.println("\n----------------\n");
 
-        car1.sell(human1,human3,9800.0);
+        try {
+            car1.sell(human1,human3,9800.0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }
