@@ -1,4 +1,4 @@
-package pl.gda.wsb;
+package pl.gda.wsb.creatures;
 
 import pl.gda.wsb.devices.Car;
 import pl.gda.wsb.devices.Phone;
@@ -6,17 +6,19 @@ import pl.gda.wsb.devices.Phone;
 import java.util.Date;
 import java.util.Objects;
 
-public class Human {
+public class Human extends Animal {
     String firstName;
     String lastName;
     String position;
     private Double salary;
     private Double cash;
-    Animal pet;
+    private Animal pet;
     private Car car;
     private Phone phone;
+    final String HUMAN_SPECIES = "homo sapiens";
 
     public Human(String firstName, String lastName, String position) {
+        super("homo sapiens");
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
@@ -72,6 +74,22 @@ public class Human {
 
     public void setPhone(Phone phone) {
         this.phone = phone;
+    }
+
+    public Animal getPet() {
+        return pet;
+    }
+
+    public void setPet(Animal pet) {
+        this.pet = pet;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getPosition() {
+        return position;
     }
 
     public boolean hasCar (Car newCar){

@@ -1,6 +1,6 @@
 package pl.gda.wsb.devices;
 
-import pl.gda.wsb.Human;
+import pl.gda.wsb.creatures.Human;
 import pl.gda.wsb.Producer;
 
 public class Phone extends Device {

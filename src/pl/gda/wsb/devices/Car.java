@@ -1,7 +1,6 @@
 package pl.gda.wsb.devices;
 
-import jdk.nashorn.internal.runtime.ECMAException;
-import pl.gda.wsb.Human;
+import pl.gda.wsb.creatures.Human;
 import pl.gda.wsb.Producer;
 
 public class Car extends Device{

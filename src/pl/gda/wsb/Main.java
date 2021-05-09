@@ -1,5 +1,7 @@
 package pl.gda.wsb;
 
+import pl.gda.wsb.creatures.Animal;
+import pl.gda.wsb.creatures.Human;
 import pl.gda.wsb.devices.Car;
 import pl.gda.wsb.devices.Phone;
 
@@ -26,19 +28,7 @@ public class Main {
         Car car1 = new Car(Producer.KIA, "CARRENS", 2017, 1.8, "black", 25600.0);
 
         System.out.println(animal1);
-        System.out.println(animal1.name);
-
-        Animal animalWithMaxWeiht = animal1.weight > animal2.weight ? animal1 : animal2;
-        StringBuilder animalWithMaxWeightDesription = new StringBuilder()
-                .append("The heaviest animal: ")
-                .append(animalWithMaxWeiht.species)
-                .append(" ")
-                .append(animalWithMaxWeiht.name)
-                .append(". His weight: ")
-                .append(animalWithMaxWeiht.weight)
-                .append(" kg.");
-        System.out.println(animalWithMaxWeightDesription);
-        System.out.println("\n----------------\n");
+        System.out.println(animal1.getName());
 
         ArrayList<Human> humansList = new ArrayList<>();
         humansList.add(human1);
@@ -51,7 +41,7 @@ public class Main {
         FileWriter fw = new FileWriter("human.txt", false);
         for (Human human : humansList) {
             System.out.println(human);
-            fw.write(human.firstName + " " + human.lastName + " , " + human.position + "\n");
+            fw.write(human.getFirstName() + " " + human.getLastName() + " , " + human.getPosition() + "\n");
         }
         fw.close();
 
@@ -72,10 +62,10 @@ public class Main {
 
         human1.setSalary(12500.0);
         human1.setCar(car1);
-        human1.pet = animal1;
+        human1.setPet(animal1);
 
         if (human1.getCar() != null)
-        System.out.println(human1.firstName + " have a car: " + human1.getCar().getProducer() + " " + human1.getCar().getModel() + " and have a pet " + human1.pet.name + " (" + human1.pet.species + ")");
+        System.out.println(human1.getFirstName() + " have a car: " + human1.getCar().getProducer() + " " + human1.getCar().getModel() + " and have a pet " + human1.getPet().getName() + " (" + human1.getPet().getSpecies() + ")");
 
         System.out.println("\n----------------\n");
 
