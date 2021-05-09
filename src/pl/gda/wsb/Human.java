@@ -1,6 +1,7 @@
 package pl.gda.wsb;
 
 import pl.gda.wsb.devices.Car;
+import pl.gda.wsb.devices.Phone;
 
 import java.util.Date;
 import java.util.Objects;
@@ -10,14 +11,16 @@ public class Human {
     String lastName;
     String position;
     private Double salary;
-    private Double cash = 15000.0;
+    private Double cash;
     Animal pet;
     private Car car;
+    private Phone phone;
 
     public Human(String firstName, String lastName, String position) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.position = position;
+        this.cash = 15000.0;
     }
 
     public Double getSalary() {
@@ -61,6 +64,14 @@ public class Human {
 
     public String getLastName() {
         return lastName;
+    }
+
+    public Phone getPhone() {
+        return phone;
+    }
+
+    public void setPhone(Phone phone) {
+        this.phone = phone;
     }
 
     public boolean hasCar (Car newCar){

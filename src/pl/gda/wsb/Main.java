@@ -106,6 +106,20 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        human4.setPhone(phone1);
+
+        try {
+            phone1.sell(human4,human2,890.0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        try {
+            animal1.sell(human1,human2,1420.0);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -72,8 +72,8 @@ public class Car extends Device{
         seller.removeCar();
         seller.setCash(seller.getCash() + price);
         buyer.setCash(buyer.getCash() - price);
-        System.out.println("Sprzedano auto: " + this.producer + " " + this.model + ". Kupił " + buyer.getLastName() + " od " + seller.getLastName() + " za " + price + ".");
-        System.out.println(seller.getLastName() + " ma teraz " + seller.getCash() + ", a " + buyer.getLastName() + " ma " + buyer.getCash() + ".");
+        System.out.println("\nSprzedano auto: " + this.producer + " " + this.model + ". Kupił " + buyer.getLastName() + " od " + seller.getLastName() + " za " + price + ".");
+        System.out.println(buyer.getLastName() + " ma teraz " + buyer.getCash() + ", a " + seller.getLastName() + " ma " + seller.getCash() + ".");
         System.out.println(seller.getLastName() + " ma auto: " + seller.getCar());
         System.out.println(buyer.getLastName() + " ma auto: " + buyer.getCar());
     }
