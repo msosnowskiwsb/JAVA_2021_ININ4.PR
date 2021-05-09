@@ -98,6 +98,10 @@ public class Main {
 
         car1.turnOn();
         phone1.turnOn();
+
+        System.out.println("\n----------------\n");
+
+        car1.sell(human1,human3,9800.0);
     }
 
 }

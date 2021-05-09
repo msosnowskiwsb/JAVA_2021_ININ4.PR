@@ -1,5 +1,6 @@
 package pl.gda.wsb.devices;
 
+import pl.gda.wsb.Human;
 import pl.gda.wsb.Producer;
 
 public class Phone extends Device{
@@ -22,5 +23,10 @@ public class Phone extends Device{
     @Override
     public void turnOn() {
         System.out.println(this.producer + " " + this.model + " jest gotowy do pracy!");
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        System.out.println("Zaimplementuj mnie");
     }
 }

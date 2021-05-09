@@ -1,8 +1,9 @@
 package pl.gda.wsb.devices;
 
 import pl.gda.wsb.Producer;
+import pl.gda.wsb.Saleable;
 
-public abstract class Device {
+public abstract class Device implements Saleable {
     public final Producer producer;
     public final Integer yearOfProduction;
     public final String model;

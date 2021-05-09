@@ -10,6 +10,7 @@ public class Human {
     String lastName;
     String position;
     private Double salary;
+    private Double cash = 15000.0;
     Animal pet;
     private Car car;
 
@@ -47,6 +48,14 @@ public class Human {
             System.out.println("Noooo a jednak, wziąłeś na kredyt...");
             this.car = car;
         } else System.out.println("No way! Skombinuj hajs!");
+    }
+
+    public Double getCash() {
+        return cash;
+    }
+
+    public void setCash(Double cash) {
+        this.cash = cash;
     }
 
     @Override
