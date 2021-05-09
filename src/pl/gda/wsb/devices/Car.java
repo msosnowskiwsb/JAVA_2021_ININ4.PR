@@ -2,18 +2,13 @@ package pl.gda.wsb.devices;
 
 import pl.gda.wsb.Producer;
 
-public class Car {
-    public final Producer producer;
-    public final Integer yearOfProduction;
-    public final String model;
+public class Car extends Device{
     private Double value;
     public Double engine;
     public String color;
 
     public Car(Producer producer, String model, Integer yearOfProduction, Double engine, String color, Double value) {
-        this.producer = producer;
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
+        super(producer,model,yearOfProduction);
         this.engine = engine;
         this.color = color;
         this.value = value;
@@ -56,5 +51,10 @@ public class Car {
                 ", engine=" + engine +
                 ", color='" + color + '\'' +
                 '}';
+    }
+
+    @Override
+    public void turnOn() {
+        System.out.println("Wrrrr.......");
     }
 }

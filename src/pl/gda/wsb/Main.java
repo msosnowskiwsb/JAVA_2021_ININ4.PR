@@ -20,8 +20,8 @@ public class Main {
         Human human3 = new Human("Keith", "Yellowstone", "Project Manager");
         Human human4 = new Human("Keith", "Yellowstone", "Project Manager");
 
-        Phone phone1 = new Phone("Samsung", "S10", 8.5);
-        Phone phone2 = new Phone("Nokia", "5.1", 7.0);
+        Phone phone1 = new Phone(Producer.SAMSUNG, "S10", 2019,8.5);
+        Phone phone2 = new Phone(Producer.NOKIA, "5.1", 2020, 7.0);
 
         Car car1 = new Car(Producer.KIA, "CARRENS", 2017, 1.8, "black", 25600.0);
 
@@ -94,7 +94,10 @@ public class Main {
         human1.setSalary(-900.0);
         human1.setSalary(13000.0);
 
-        //TODO: dokończyć zadanie 10, na tym skończyliśmy zajęcia
+        System.out.println("\n----------------\n");
+
+        car1.turnOn();
+        phone1.turnOn();
     }
 
 }

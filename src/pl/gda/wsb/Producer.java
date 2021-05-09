@@ -1,5 +1,5 @@
 package pl.gda.wsb;
 
 public enum Producer {
-        KIA, CITOREN, SKODA, VOLKSWAGEN, TESLA, FORD
+        KIA, CITROEN, SKODA, VOLKSWAGEN, TESLA, FORD, SAMSUNG, NOKIA
 }
