@@ -1,7 +1,9 @@
 package pl.gda.wsb;
 
 import pl.gda.wsb.creatures.Animal;
+import pl.gda.wsb.creatures.FarmAnimal;
 import pl.gda.wsb.creatures.Human;
+import pl.gda.wsb.creatures.Pet;
 import pl.gda.wsb.devices.Car;
 import pl.gda.wsb.devices.Phone;
 
@@ -14,8 +16,8 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Hello world!");
 
-        Animal animal1 = new Animal("mouse", "Jerry");
-        Animal animal2 = new Animal("lion", "Mufasa");
+        Pet animal1 = new Pet("mouse", "Jerry");
+        FarmAnimal animal2 = new FarmAnimal("cow", "Krasula");
 
         Human human1 = new Human("Jan", "Nowak", "UX Designer");
         Human human2 = new Human("Janusz", "Kowalski", "Manual Tester");

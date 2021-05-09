@@ -2,7 +2,7 @@ package pl.gda.wsb.creatures;
 
 import pl.gda.wsb.Saleable;
 
-public class Animal implements Saleable {
+public abstract class Animal implements Saleable {
     final String species;
     String name;
     double weight;
