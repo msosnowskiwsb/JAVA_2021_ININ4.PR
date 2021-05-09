@@ -1,11 +1,11 @@
 package pl.gda.wsb;
 
-import pl.gda.wsb.creatures.Animal;
 import pl.gda.wsb.creatures.FarmAnimal;
 import pl.gda.wsb.creatures.Human;
 import pl.gda.wsb.creatures.Pet;
 import pl.gda.wsb.devices.Car;
 import pl.gda.wsb.devices.Phone;
+import pl.gda.wsb.devices.Producer;
 
 import java.io.FileWriter;
 import java.io.IOException;
